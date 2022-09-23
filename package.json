@@ -1,0 +1,20 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch ./assets/scss:./assets/css --style compressed --no-source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glauciodaniel/fiap-avanade-web-2109.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glauciodaniel/fiap-avanade-web-2109/issues"
+  },
+  "homepage": "https://github.com/glauciodaniel/fiap-avanade-web-2109#readme"
+}
