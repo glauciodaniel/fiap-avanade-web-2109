@@ -31,17 +31,84 @@ section.full-banner {
     height: 100vh;
     background: url("../images/c6bank/hero-bg-xs.webp") no-repeat;
     background-size: cover;
+    > .destak {
+        width: 40%;
+        height: 60vh;
+        position: absolute;
+        bottom: 0;
+        left: 15%;
+        > h1 {
+            font-weight: 300;
+            font-size: 4rem;
+            margin:0;
+            line-height: 1em;
+            margin-bottom: 20px;
+        }
+        > h2, h3 {
+            font-weight: 300;
+            margin: 0;
+        }
+        h3 {
+            width: 95%;
+            background: rgba(36,36,36,0.35);
+            color: #eee;
+            font-weight: normal;
+            line-height: 2.5em;
+            font-size: 0.8em;
+            padding: 0 2%;
+            border-radius: 25px;
+        }
+    }
 }
+
+::selection {
+    background: #ffe45c;
+    color: #242424;
+}
+
+.button-disabled {
+    background: none;
+    border: solid 0.5px rgba(36,36,36,0.8);
+}
+.button-disabled:hover{
+    background: rgba(36,36,36,0.8);
+}
+
 button {
-    width: 290px;
+    background:  linear-gradient(150deg, #ffe45c 0%, #ffc900 100%);
+    width: 190px;
     line-height: 40px;
     border-radius: 25px;
     border: none;
     text-transform: uppercase;
 }
-@media (min-width: 1280px){
+button:hover{
+    background:linear-gradient(150deg, #ffe668 0%, #ffdc5f 100%);
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+// span e tag "a" são elementos de linha ou de texto.
+// para formatar, cores, bordas e tamanho é necessário transformá-lo
+// em um elemento de bloco, para isso utilizamos a propriedade display: block;
+.destak  h3 > span {
+    display: inline-block;
+    line-height: 1.6em;
+    width: fit-content;
+    background: #006d8f;
+    border-radius: 25px;
+    padding: 0 3%;
+    font-weight: bold;
+}
+@media (min-width: 992px){
     section.full-banner {
     background: url("../images/c6bank/hero-bg.webp") no-repeat;
     background-size: cover;
     }
+}
+.jss4 .jss6 {
+    fill: hsla(0, 0%, 14%, 1);
+}
+.jss12 {
+    width: auto;
+    height: 24px;
 }
