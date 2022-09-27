@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="top-site">
         <div>
             <svg class="jss6 jss12" viewBox="0 0 120 24" xmlns="http://www.w3.org/2000/svg">
                 <path clip-rule="evenodd" shape-rendering="geometricPrecision"
@@ -27,7 +27,7 @@
             </ul>
 
         </nav>
-        <button>abra sua conta</button>
+        <button class="top-button">abra sua conta</button>
     </header>
     <section class="full-banner">
 
@@ -43,6 +43,34 @@
     <footer>
 
     </footer>
+    <script>
+        const header = document.querySelector(".top-site");
+        const button = document.querySelector(".top-button");
+        header.style.background = "none";
+        button.classList.add("disabled");
+        // margin-bottom
+        // marginBottom
+        //janela e site
+        //window e document
+
+        //evento chamado scroll. JavaScript é uma linguagem dirigida a eventos
+        //Criamos uma escuta para um evento. 
+
+        window.addEventListener('scroll', (e) => {
+            console.log(window.scrollY);
+
+        });
+
+//teremos aula sobre funções em JavaScript.
+//A forma mais simples de criar uma função, é uma função de seta.
+// arrow function
+//   const msg = nome_time => alert(nome_time);
+// msg('Corinthians');
+//  (nome_time) => { corpo da função}
+// ()=>{}
+
+
+    </script>
 </body>
 
 </html>

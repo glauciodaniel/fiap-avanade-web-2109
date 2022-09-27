@@ -66,12 +66,12 @@ section.full-banner {
     color: #242424;
 }
 
-.button-disabled {
+button.disabled {
     background: none;
     border: solid 0.5px rgba(36,36,36,0.8);
 }
-.button-disabled:hover{
-    background: rgba(36,36,36,0.8);
+button.disabled:hover{
+    background: rgba(36,36,36,0.2);
 }
 
 button {
