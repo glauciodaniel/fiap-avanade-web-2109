@@ -27,6 +27,10 @@ header {
         }        
     }
 }
+
+header.footer-link-a > nav > ul li a {
+    color: #fff;
+}
 section.full-banner {
     width: 100%;
     height: 100vh;

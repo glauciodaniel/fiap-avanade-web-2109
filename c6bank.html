@@ -46,6 +46,8 @@
     <script>
         const header = document.querySelector(".top-site");
         const button = document.querySelector(".top-button");
+        const body = document.querySelector("body");
+
         header.style.background = "none";
         button.classList.add("disabled");
         // margin-bottom
@@ -57,16 +59,25 @@
         //Criamos uma escuta para um evento. 
 
         window.addEventListener('scroll', (e) => {
-            console.log(window.scrollY);
+            console.log(body.clientHeight);//altura total 2000
 
             if (scrollY < 100) {
                 header.style.background = "none";
                 button.classList.add("disabled");
             } else {
-                header.style.background = "#fff";
-                button.classList.remove("disabled");
-            }
+                const logo = header.querySelector(".jss12");
 
+                if (window.scrollY >= (body.clientHeight - 1000)) {
+                    header.style.background = "#000";
+                    logo.style.fill = "#fff";
+                    header.classList.add("footer-link-a");
+                } else {
+                    header.style.background = "#fff";
+                    button.classList.remove("disabled");
+                    logo.style.fill = "#000";
+                    header.classList.remove("footer-link-a");
+                }
+            }
         });
 
 //teremos aula sobre funções em JavaScript.
