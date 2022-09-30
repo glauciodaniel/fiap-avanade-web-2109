@@ -31,11 +31,11 @@ function mudaTitulo(novoTitulo) {
 mudaTitulo("Vai Corinthians");
 // expressão de função - Function Expression
 //função anônima
-const mudaTitulo2 = function (novoTitulo) {
-  document.querySelector("h2").innerHTML = novoTitulo;
+const mudaTitulo2 = function (target, novoTitulo) {
+  document.querySelector(target).innerHTML = novoTitulo;
 };
 
-mudaTitulo2("Trocando o subtítulo");
+mudaTitulo2("h1", "Trocando o título");
 
 //  Arrow Function - É uma função criada no ES6 ou ES2015
 // não existe o this dentro de uma arrow function.
