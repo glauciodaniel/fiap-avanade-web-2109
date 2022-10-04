@@ -37,14 +37,12 @@ const nbaTeams = ["Warriors", "Raptors", "Lakers", "Celtics", "Bucks", "76ers"];
 // slice - retorna um novo array, o primeiro parâmetro é opcional, e começa em zero.
 // o último parâmetro determina até onde deve ser filtrado, porém excluíndo este último elemento.
 const newNba = nbaTeams.slice(-1);
-
 console.log(nbaTeams.slice(3, 5));
 console.log(newNba, "último");
 
 // slice - retorna um novo array
 ///////////////////////////////////////////////
-// map, filter, reduce, find, findIndex, search, sort, reverse, split, join, substring
-
+// map, filter, reduce, find, findIndex, sort, reverse, split, join, substring
 const name = "Glaucio Daniel Souza Santos";
 const nameArray = name.split(" ");
 const nameComplete = [nameArray[0], nameArray.slice(-1)].join(" ");
@@ -54,9 +52,9 @@ const procuraCeltic = (nomeTime) => {
   return nomeTime == "Celtics" || nomeTime == "Raptors";
 };
 
-const celticsMap = nbaTeams.map(procuraCeltic);
-const celticsFilter = nbaTeams.filter(procuraCeltic);
-const celticsFind = nbaTeams.find(procuraCeltic);
+const celticsMap = nbaTeams.map(procuraCeltic); // retorna um novo array, mapeando e buscando no array anterior.
+const celticsFilter = nbaTeams.filter(procuraCeltic); //retorna um novo array, procura do começo ao fim do array anterior, quem retornou true para a função usada.
+const celticsFind = nbaTeams.find(procuraCeltic); //retorna a primeira ocorrência de uma busca com o parâmetro que a função determinou.
 
 console.log(celticsMap, "map");
 console.log(celticsFilter, "filter");
