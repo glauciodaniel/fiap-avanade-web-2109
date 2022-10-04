@@ -38,7 +38,7 @@ tooltip.addEventListener("mouseover", (e) => {
   newDiv.style.display = "flex";
   newDiv.style.left =
     (e.clientX + largura > body.clientWidth
-      ? e.clientX - largura
+      ? e.clientX - largura - 20
       : e.clientX + largura) + "px";
 
   console.log(newDiv.style.width, "width");
@@ -51,3 +51,5 @@ tooltip.addEventListener("mouseout", (e) => {
     document.querySelector(".tooltip").remove();
   }
 });
+
+tooltip("#tooltip", "texto do tooltip");
