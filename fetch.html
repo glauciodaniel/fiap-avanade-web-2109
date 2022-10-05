@@ -6,12 +6,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CEP - Consultando CEP</title>
+    <style>
+        form {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        label {
+            display: flex;
+            flex-direction: column;
+            margin-top: 5%;
+        }
+
+        input {
+            border: solid 0.5px #ddd;
+            height: 50px;
+            line-height: 50px;
+            width: 100%;
+            border-radius: 10px;
+            outline-color: aqua;
+            font-size: 1.5em;
+            padding-left: 10%;
+        }
+    </style>
 </head>
 
 <body>
-    <input type="text" maxlength="9" required id="cep" />
-    <div id="resultado"></div>
 
+    <form>
+        <label>
+            CEP
+            <input type="text" maxlength="9" required id="cep" />
+        </label>
+        <label>
+            Logradouro
+            <input type="text" id="logradouro" />
+        </label>
+        <label>
+            Número
+            <input type="text" id="numero" />
+        </label>
+        <label>
+            Complemento
+            <input type="text" id="complemento" />
+        </label>
+        <label>
+            Bairro
+            <input type="text" id="bairro" />
+        </label>
+        <label>
+            Cidade
+            <input type="text" id="localidade" />
+        </label>
+        <label>
+            Estado
+            <input type="text" id="uf" />
+        </label>
+    </form>
+    <div id="resultado"></div>
     <script type="text/javascript" src="assets/js/fetch.js"></script>
 </body>
 
