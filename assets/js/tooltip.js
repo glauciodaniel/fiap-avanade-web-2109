@@ -23,7 +23,7 @@ const tooltip = (target, texto) => {
         ? e.clientX - largura - 20
         : e.clientX + largura) + "px";
 
-    body.appendChild(newDiv);
+    tooltipTarget.parentNode.appendChild(newDiv);
   });
 
   tooltipTarget.addEventListener("mouseout", (e) => {
